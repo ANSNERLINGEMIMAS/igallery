@@ -1,5 +1,5 @@
 # Ex.08 Design of Interactive Image Gallery
-## Date:14.12.2024
+## Date:16.12.2024
 
 ## AIM:
 To design a web application for an inteactive image gallery with minimum five images.
@@ -98,6 +98,10 @@ Publish the website in the given URL.
             <button onclick="prevImage()">Prev</button>
             <button onclick="nextImage()">Next</button>
         </div>
+        <br>
+        <footer align="center" id="copywrite">
+            Designed and developed by ANS NERLING EMIMA &copy 2024
+        </footer>
     </div>
     <script>
         let currentIndex = 0;
@@ -124,7 +128,7 @@ Publish the website in the given URL.
 ```
 
 ## OUTPUT:
-![alt text](<Screenshot 2024-12-14 195018.png>)
+![alt text](<Screenshot 2024-12-16 170743-1.png>)
 
 ## RESULT:
 The program for designing an interactive image gallery using HTML, CSS and JavaScript is executed successfully.
