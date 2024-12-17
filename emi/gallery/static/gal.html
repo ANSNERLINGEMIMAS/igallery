@@ -62,5 +62,18 @@
     <footer>
         Designed and developed by ANS NERLING EMIMA &copy; 2024
     </footer>
+    <script>
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('mouseover', () => {
+                item.style.transform = 'scale(1.5)';
+                item.style.zIndex = '1';
+            });
+            item.addEventListener('mouseout', () => {
+                item.style.transform = 'scale(1)';
+                item.style.zIndex = '0';
+            });
+        });
+    </script>
+
 </body>
 </html>

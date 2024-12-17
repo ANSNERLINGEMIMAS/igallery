@@ -90,11 +90,26 @@ Publish the website in the given URL.
     <footer>
         Designed and developed by ANS NERLING EMIMA &copy; 2024
     </footer>
+    
+     <script>
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('mouseover', () => {
+                item.style.transform = 'scale(1.5)';
+                item.style.zIndex = '1';
+            });
+            item.addEventListener('mouseout', () => {
+                item.style.transform = 'scale(1)';
+                item.style.zIndex = '0';
+            });
+        });
+    </script>
+
 </body>
 </html>
 ```
 ## OUTPUT:
-![alt text](<Screenshot 2024-12-17 091113.png>)
+![alt text](<Screenshot 2024-12-17 091739.png>)
+
 
 ## RESULT:
 The program for designing an interactive image gallery using HTML, CSS and JavaScript is executed successfully.
