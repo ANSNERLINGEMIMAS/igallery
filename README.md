@@ -35,50 +35,42 @@ Publish the website in the given URL.
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: burlywood;
+            background-color: seagreen;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh; 
             margin: 0;
+            flex-direction: column;
         }
 
         .gallery-container {
             text-align: center;
-            max-width: 650px; 
+            width: 100%;
         }
 
         .gallery {
             display: flex;
-            flex-wrap: wrap; 
-            justify-content: center; 
-            overflow: hidden;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px; 
         }
 
         .gallery-item {
-            width: 190px; 
-            height: 200px; 
-            margin: 10px; 
-            transition: transform 0.5s ease-in-out;
+            width: 150px; 
+            height: 150px;
+            transition: transform 0.3s ease;
         }
 
-        .controls {
-            margin-top: 20px;
+        .gallery-item:hover {
+            transform: scale(1.5); 
+            z-index: 1; 
         }
 
-        button {
-            padding: 20px 40px; 
-            margin: 0 10px;
-            border: none;
-            border-radius: 4px;
-            background-color:plum;
-            color:black;
-            font-size: 18px; 
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color:red;
+        footer {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 20px; 
         }
     </style>
 </head>
@@ -92,43 +84,17 @@ Publish the website in the given URL.
             <img src="mm.jpg" alt="Image 4" class="gallery-item">
             <img src="a.jpg" alt="Image 5" class="gallery-item">
             <img src="s.jpg" alt="Image 6" class="gallery-item">
-    
         </div>
-        <div class="controls">
-            <button onclick="prevImage()">Prev</button>
-            <button onclick="nextImage()">Next</button>
-        </div>
-        <br>
-        <footer align="center" id="copywrite">
-            Designed and developed by ANS NERLING EMIMA &copy 2024
-        </footer>
     </div>
-    <script>
-        let currentIndex = 0;
-
-        function showImage(index) {
-            const gallery = document.querySelector('.gallery');
-            gallery.style.transform = `translateX(${-index * 170}px)`; 
-        }
-
-        function prevImage() {
-            const totalImages = document.querySelectorAll('.gallery-item').length;
-            currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalImages - 1;
-            showImage(currentIndex);
-        }
-
-        function nextImage() {
-            const totalImages = document.querySelectorAll('.gallery-item').length;
-            currentIndex = (currentIndex < totalImages - 1) ? currentIndex + 1 : 0;
-            showImage(currentIndex);
-        }
-    </script>
+    <br>
+    <footer>
+        Designed and developed by ANS NERLING EMIMA &copy; 2024
+    </footer>
 </body>
 </html>
 ```
-
 ## OUTPUT:
-![alt text](<Screenshot 2024-12-16 170743-1.png>)
+![alt text](<Screenshot 2024-12-17 091113.png>)
 
 ## RESULT:
 The program for designing an interactive image gallery using HTML, CSS and JavaScript is executed successfully.
